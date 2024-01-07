@@ -31,3 +31,28 @@ console.log(typeof(null));
 console.log(typeof(names));
 
 //non primitive datatypes are objects datatype and bigInt datatype is undefined
+
+
+//???????????MEMORY?????????///
+//2 types heap and stack;
+//In stack a copy is created whereas in heap refrence
+//stack(all primitive data types)  heap(non-primitive)
+
+let myname = "Harsh"
+let mynewname = myname //copy is provided not the original one so below when we change the mynewname it only replaces the copy not the original
+mynewname = "hehe" 
+console.log(myname)
+console.log(mynewname)
+
+//           stack demonstration   
+let userone = {
+    email: "hehe@gmai.com",
+    name: "hehe"
+}
+let usertwo = userone
+
+usertwo.email = "harsh@gmail.com"
+
+console.log(userone.email)
+console.log(usertwo.email)
+//here we get same value because same refrences is given not the copy so the value is changed
