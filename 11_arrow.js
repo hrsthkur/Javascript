@@ -15,7 +15,7 @@ user.welcomeMessage()
 // }
 // chai()
 
-const fxn = () => {    //arrow function
+const fxn = () => {    //arrow function  //arrow function can be declared without name also like () =>
 console.log(this);
 }
 //fxn()
